@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">FastHub</string>
+    <string name="welcome">Welcome, %s</string>
+    <string name="feeds">Feeds</string>
+    <string name="issues">Issues</string>
+    <string name="pull_requests">Pull Requests</string>
+    <string name="home_fr">Home</string>
+    <string name="profile_fr">Profile</string>
+    <string name="notifications_fr">Notifications</string>
+    <string name="bookmark_fr">Saved</string>
+    <string name="trending_fr">Trending</string>
+    <string name="gists_fr">gists</string>
+    <string name="fastHub_fr">FastHub</string>
+    <string name="faq_fr">FAQ</string>
+    <string name="organisations_fr">Organisations</string>
+    <string name="logout">Logout</string>
+    <string name="add_account">Add Account</string>
+    <string name="repositories">Repositories</string>
+    <string name="pin">Pinned</string>
+    <string name="close_drawer">close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">close</string>
+    <string name="star_icon">star icon</string>
+    <string name="add_gists">add gists</string>
+    <string name="no_starred_gists">No Starred Gists</string>
+    <string name="description">Description</string>
+    <string name="add">Add</string>
+    <string name="submit_as">Submit as</string>
+    <string name="no_files">No Files</string>
+    <string name="reload">Reload</string>
+    <string name="file_name_with_extension">File name with extension</string>
+    <string name="content">Content</string>
+    <string name="submit">Submit</string>
+    <string name="enterprise"> *Login to unlimited number of Enterprise and Github accounts \n *Access Github contents along side your Enterprise Account</string>
+    <string name="pro_features">*Get the PRO features of FastHub which includes: \n *All PRO themes \n *PR Reviews and On-line code comments(PRs and Commits) \n *Commit from FastHub(Edit, Create, Delete files \n *Support 2 more Merging methods(Rebase and Squash) Login to unlimited accounts \n *Edit, add unlimited Gist files \n *Project Columns and Cards \n *Pin Issues, PRs and Gists \n *New upcoming PRO features (Coming  soon..,)</string>
+    <string name="purchase">Purchase</string>
+    <string name="starred">Starred</string>
+    <string name="clear">Clear Search</string>
+    <string name="title_activity_git_repo">GitRepoActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="sign_in_text">SIGN IN WITH BROWSER</string>
+</resources>

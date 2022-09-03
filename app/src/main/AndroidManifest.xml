@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fasthub">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".GithubApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FastHub">
+        <activity
+            android:name=".ui.mainActivity.drawer_main.profile.repo_tree.GitRepoActivity"
+            android:exported="false"
+            android:label="@string/title_activity_git_repo"/>
+        <activity
+            android:name=".EmptyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.oauth.OAuthActivity"
+            android:exported="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="com.example.fasthub"
+                    android:scheme="demo" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.mainActivity.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.mainActivity.search.SearchActivity"
+            android:exported="false" />
+        <activity android:name=".ui.mainActivity.drawer_main.profile.repo_tree.FileContentFragment"
+            android:exported="false"/>
+    </application>
+
+</manifest>

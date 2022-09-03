@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="15dp"
+    android:padding="@dimen/spacing_xs_large">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_people" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enterprise"
+                android:layout_marginStart="40dp"
+                android:textSize="18sp"
+                android:layout_alignStart="@id/imageView"/>
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$5.08"
+                android:textColor="@color/red"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginStart="40dp"
+                android:text="@string/enterprise"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/spacing_s_large"
+            android:text="@string/purchase"
+            android:textColor="@color/green"
+            android:drawablePadding="10dp"
+            android:layout_gravity="end"
+            app:drawableEndCompat="@drawable/ic_arrow_forward" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/pro_features"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_repo" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRO Features"
+                android:textSize="18sp"
+                android:layout_marginStart="40dp"/>
+            <TextView
+                android:id="@+id/price2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$4.05"
+                android:textColor="@color/red"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:textSize="17sp"
+            android:text="@string/pro_features"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/purchase"
+            android:layout_marginVertical="@dimen/spacing_s_large"
+            android:textColor="@color/green"
+            android:drawablePadding="10dp"
+            android:layout_gravity="end"
+            app:drawableEndCompat="@drawable/ic_arrow_forward" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/purchase_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Purchase All for $8.12"
+        android:textColor="@color/blue"
+        android:textSize="18sp" />
+</LinearLayout>

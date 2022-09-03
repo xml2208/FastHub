@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/spacing_xs_large"
+    android:layout_marginBottom="@dimen/spacing_xs_large"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/description"
+        android:inputType="textMultiLine|textCapSentences"
+
+        android:layout_marginStart="@dimen/spacing_xs_large"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:layout_marginEnd="@dimen/spacing_xs_large"
+        android:layout_marginBottom="@dimen/spacing_xs_large"
+        android:maxLines="3" />
+
+    <EditText
+        android:id="@+id/file_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginStart="@dimen/spacing_xs_large"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:layout_marginEnd="@dimen/spacing_xs_large"
+        android:layout_marginBottom="@dimen/spacing_xs_large"
+        android:autofillHints=""
+        android:hint="@string/file_name_with_extension"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/file_name"
+        android:layout_marginStart="@dimen/spacing_xs_large"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:layout_marginEnd="@dimen/spacing_xs_large"
+        android:layout_marginBottom="@dimen/spacing_xs_large"
+        android:autofillHints=""
+        android:hint="@string/content"
+        android:inputType="textMultiLine" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_border"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="5dp">
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/add_gist"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="@string/add"-->
+        <!--            android:textSize="18sp"-->
+        <!--            app:drawableEndCompat="@drawable/ic__add_black" />-->
+
+    </RelativeLayout>
+
+    <!--    <fragment-->
+    <!--        android:id="@+id/filesFr"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/submit_as"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottom_border"
+            android:gravity="center"
+            android:padding="@dimen/spacing_xs_large"
+            android:text="@string/submit_as"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/create_secret_gist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:src="@drawable/ic_incognito" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/create_public_gist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:src="@drawable/ic_brower" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

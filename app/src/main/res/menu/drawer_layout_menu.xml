@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home_fr" />
+    <group android:id="@+id/profile_group">
+        <item
+            android:id="@+id/profileFragment"
+            android:icon="@drawable/ic_person"
+            android:title="@string/profile_fr" />
+    </group>
+    <group
+        android:id="@+id/group_one"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/pinnedFragment"
+            android:icon="@drawable/ic_bookmark"
+            android:title="@string/pin" />
+        <item
+            android:id="@+id/trendingFragment"
+            android:icon="@drawable/ic_trending"
+            android:title="@string/trending_fr" />
+        <item
+            android:id="@+id/gistsFragment"
+            android:icon="@drawable/ic_gists"
+            android:title="@string/gists_fr" />
+    </group>
+    <group
+        android:id="@+id/group_three"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/fasthub"
+            android:icon="@drawable/ic_fasthub_mascot"
+            android:title="@string/fastHub_fr" />
+        <item
+            android:id="@+id/FAQFragment"
+            android:icon="@drawable/ic_info"
+            android:title="@string/faq_fr" />
+    </group>
+</menu>
